@@ -29,3 +29,10 @@ Jupyter Notebook 6.1.3 is running at:
 ```
  
  * Go to that url
+
+
+* If you want to share a folder with traning data or scripts add a `-v` option:
+
+```
+docker run -p 8888:8888 -v ${PWD}/training_data:/training_data -it jupyter
+```
